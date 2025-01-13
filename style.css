@@ -77,3 +77,125 @@ textarea:not([rows]) {
  --blue: #4C5FD5;
  --random-light-gray: #dadbf1;
 }
+body {
+  padding: 0;
+  font-size: 1rem;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}
+.mundu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  align-items: center;
+  background-color: var(--random-light-gray);
+}
+.mundu h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.mundu input {
+  width: 600px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 0.5px solid black;
+  box-shadow: 0px 0px 5px 1px black;
+}
+ul {
+  list-style: none;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+header {
+  background-color: black;
+  color: white;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.input {
+  display: flex; 
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px
+}
+.wrapper a {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper button {
+  color: white;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+#submit {
+  background-color: black;
+  border: 1px solid var(--random-light-gray);
+}
+.wrap {
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px;
+  text-align: start;
+}
+.buton {
+  display: flex; 
+  gap: 10px;
+}
+.radnom {
+  display: flex; 
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  margin: 25px;
+}
+.radnom p {
+  width: 273.8px;
+}
+.wrapper h3 {
+  border-right: 2px solid white;
+}
+i {
+  display: inline-block;
+  font-size: 3rem;
+}
+.radnom a {
+  color: var(--blue);
+}
+.copyright {
+  width: 225px;
+}
+@media screen and (min-width: 37.5rem) {
+  .radnom {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+  }
+  footer {
+    flex-direction: row;
+  }
+  .wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+  }
+}
